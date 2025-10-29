@@ -1,148 +1,92 @@
-import React from "react";
-import bgImage from "../Images/aboutus.png"; // adjust the path as needed
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+import bgImage from "../Images/aboutus.png"; // background for Hero
 import Footer from "../Pages/Footer";
-import aqmLogo1 from "../Images/aboutlogo.png";
-import aqmLogo2 from "../Images/amslogo.png";
-
-
 
 export default function HeroSection() {
   const [loaded, setLoaded] = useState(false);
   useEffect(() => {
     setLoaded(true);
   }, []);
-  
+
+  const missions = [
+    "Create sustainable, compliant, risk mitigated organization",
+    "Providing greater $ value to client",
+    "Protect Brand Identity of client",
+    "Intelligent Collections, Continuous Recovery",
+    "Win–Win for all stakeholders – Client, Partner, and Debtor",
+  ];
 
   return (
     <>
+      {/* ========== HERO / ABOUT SECTION + VISION + MISSION ========== */}
       <section
-        className="relative w-full min-h-screen bg-cover bg-center flex items-center justify-center text-white px-6"
+        className="relative w-full min-h-screen bg-cover bg-center flex items-center justify-center text-white px-6 py-20"
         style={{ backgroundImage: `url(${bgImage})` }}
       >
-        {/* Overlay for dark effect */}
+        {/* Overlay */}
         <div className="absolute inset-0 bg-black/70"></div>
 
-        <div className="relative z-10 max-w-4xl text-center">
-          {/* Main Heading */}
-         {/* <h1
-  className="text-3xl md:text-4xl font-bold mb-6 leading-snug"
-  style={{ color: "#d8b9ff" }}
->
-  About AQM
-</h1> */}
+        <div className="relative z-10 max-w-5xl text-center space-y-12">
+          {/* ABOUT AQM */}
+          <div>
+            <h1 className="text-xl sm:text-2xl md:text-4xl font-bold mb-4 text-[#d8b9ff]">
+              About AQM
+            </h1>
+            <p className="text-gray-300 max-w-2xl mx-auto">
+              Promoted by AMS, the Alpha Quick Mobility Pvt. Ltd. forays into
+              creating the AI-powered next-gen data platform and apps to
+              optimize the collections through all channels. Its field
+              collection team has penetration across Pan-India.
+            </p>
+          </div>
 
+          {/* ABOUT AMS */}
+          <div>
+            <h1 className="text-xl sm:text-2xl md:text-4xl font-bold mb-4 text-[#d8b9ff]">
+              About AMS Comtel
+            </h1>
+            <p className="text-gray-300 max-w-2xl mx-auto">
+              AMS Comtel BPMS Pvt. Ltd. is a comprehensive TELE-COLLECTIONS
+              company, founded by a team of senior professionals who have held
+              leadership positions in organizations of stature in banking &
+              telecom companies.
+            </p>
+          </div>
 
-<div className="text-center">
-<h1
-  className="text-xl sm:text-2xl md:text-4xl font-bold mb-6 leading-snug text-[#d8b9ff] flex items-center justify-center gap-2 flex-wrap sm:flex-nowrap"
->
-  About AQM
-  {/* <img
-    src={aqmLogo1}
-    alt="AQM Logo"
-    className="w-6 sm:w-7 md:w-8 h-6 sm:h-7 md:h-8 inline-block"
-  /> */}
-</h1>
+          {/* VISION */}
+          <div>
+            <h1 className="text-xl sm:text-2xl md:text-4xl font-bold mb-4 text-white">
+              OUR VISION
+            </h1>
+            <p className="text-gray-300 max-w-2xl mx-auto mb-8">
+              To revolutionize collections by leveraging cutting-edge data
+              analytics and AI to create empathetic, efficient, and highly
+              personalized services.
+            </p>
+          </div>
 
-
-  {/* Subtext */}
-  <p className="text-gray-300 max-w-2xl mx-auto mb-10">
-    Promoted by AMS, the Alpha Quick Mobility Pvt. Ltd. forays into creating the AI-powered next-gen data platform and apps to optimize the collections through all channels. Its field collection team has penetration across Pan-India.
-  </p>
-</div>
-
-<div className="text-center">
- <h1
-  className="text-xl sm:text-2xl md:text-4xl font-bold mb-6 leading-snug text-[#d8b9ff] flex items-center justify-center gap-2 flex-wrap sm:flex-nowrap"
->
-  About AMS Comtel
-  {/* <img
-    src={aqmLogo2}
-    alt="AQM Logo"
-    className="w-20 sm:w-24 md:w-32 h-6 sm:h-7 md:h-8 inline-block"
-  /> */}
-</h1>
-
-
-  {/* Subtext */}
-  <p className="text-gray-300 max-w-2xl mx-auto mb-10">
-    AMS Comtel BPMS Pvt. Ltd. is comprehensive TELE-COLLECTIONS company, founded by a team of senior professionals who have held leadership positions in organizations of stature in banking & telecom companies.
-  </p>
-</div>
-
-<div className="text-center">
-<h1
-  className="text-xl sm:text-2xl md:text-4xl font-bold mb-6 leading-snug text-white flex items-center justify-center gap-2 flex-wrap sm:flex-nowrap"
->
-
-  OUR VISION
-  {/* <img
-    src={aqmLogo1}
-    alt="AQM Logo"
-    className="w-6 sm:w-7 md:w-8 h-6 sm:h-7 md:h-8 inline-block"
-  /> */}
-</h1>
-
-
-  {/* Subtext */}
-  <p className="text-gray-300 max-w-2xl mx-auto mb-10">
-    To revolutionize collections by leveraging cutting-edge data analytics and AI to create empathetic, efficient, and highly personalized services
-  </p>
-</div>
-
-
-
-
-          {/* Client Logos */}
-          {/* <div className="flex flex-wrap justify-center items-center gap-10 opacity-90 mt-16">
-            <img
-              src="https://dummyimage.com/80x40/fff/000&text=Genpact"
-              alt="Genpact"
-              className="h-8 invert"
-            />
-            <img
-              src="https://dummyimage.com/80x40/fff/000&text=LIDL"
-              alt="LIDL"
-              className="h-8 invert"
-            />
-            <img
-              src="https://dummyimage.com/100x40/fff/000&text=Capgemini"
-              alt="Capgemini"
-              className="h-8 invert"
-            />
-            <img
-              src="https://dummyimage.com/80x40/fff/000&text=Cars24"
-              alt="Cars24"
-              className="h-8 invert"
-            />
-            <img
-              src="https://dummyimage.com/100x40/fff/000&text=Nowcom"
-              alt="Nowcom"
-              className="h-8 invert"
-            />
-          </div> */}
-
-          {/* <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {[
-              ["2015", "Founding year"],
-              ["460+", "Team members"],
-              ["20+", "Clients"],
-              ["30M+", "Customers"],
-            ].map(([title, subtitle], i) => (
-              <div
-                key={title}
-                className={`transition-opacity duration-2000 delay-${
-                  1100 + i * 200
-                } ${loaded ? "opacity-100" : "opacity-0"}`}
-              >
-                <h2 className="text-2xl font-bold">{title}</h2>
-                <p className="text-gray-400">{subtitle}</p>
-              </div>
-            ))}
-          </div> */}
+          {/* MISSION (Inline Style) */}
+          <div>
+            <h2 className="text-xl sm:text-2xl md:text-4xl font-bold mb-4 text-white">
+              OUR MISSION
+            </h2>
+            <div className="flex flex-wrap justify-center gap-4">
+              {missions.map((mission, index) => (
+                <div
+                  key={index}
+                  className="bg-white/10 border border-gray-500 rounded-2xl p-4 w-72 shadow-md hover:scale-105 transition-transform duration-300"
+                >
+                  <p className="text-sm sm:text-base text-gray-200 font-medium">
+                    {mission}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
+
+      {/* Footer */}
       <Footer />
     </>
   );

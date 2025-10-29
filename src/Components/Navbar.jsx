@@ -67,7 +67,7 @@ export default function Navbar() {
           onClick={() => setIsModalOpen(true)}
           className="hidden md:inline-block ml-6 px-4 py-2 rounded-xl text-black font-medium bg-gradient-to-r from-sky-400 to-purple-300 hover:opacity-90 transition cursor-pointer"
         >
-          Request a Demo ▶
+          Let's Connect ▶
         </button>
 
         {/* Hamburger Icon (visible only on mobile) */}
@@ -146,7 +146,7 @@ export default function Navbar() {
             }}
             className="mt-4 px-5 py-3 rounded-xl text-black font-semibold bg-gradient-to-r from-sky-400 to-purple-300 hover:opacity-90 transition"
           >
-            Request a Demo ▶
+            Let's Connect ▶
           </button>
         </div>
       )}

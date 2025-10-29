@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import demoImage from "../Images/hero4.mp4";
+import demoImage from "../Images/hero5.mp4";
 import indiaMap from "../Images/india_map.mp4";
 import tpeImg from "../Images/tpe.png";
 import paytmImg from "../Images/paytm3.png";
@@ -167,13 +167,14 @@ export default function Home() {
       {/* Digital Banking Section */}
       <div className="bg-black text-white py-20">
         <div className="w-full text-center mb-16">
-      <h1
-  className="text-lg sm:text-xl md:text-3xl px-2 font-bold"
+    <h1
+  className="text-lg md:text-2xl font-bold leading-snug mb-4"
   style={{ color: "#d8b9ff" }}
 >
   India’s Only Company to Have a Nation-wide <br />
   Voice & Field Operations
 </h1>
+
 
 
         </div>
@@ -290,7 +291,7 @@ export default function Home() {
     </h3>
 
     <h3
-      className="text-sm md:text-xl font-semibold leading-snug mb-3 text-white"
+      className="text-sm md:text-xl font-semibold leading-snug  text-white mb-8"
     >
       Complete Outsourcing of the Credit Cycle
     </h3>
@@ -321,17 +322,17 @@ export default function Home() {
   </div>
 
   {/* Right Section */}
-  <div className="flex justify-center md:justify-start">
-    <video
-      autoPlay
-      muted
-      loop
-      playsInline
-      className="w-[300px] md:w-[360px] rounded-2xl shadow-2xl"
-    >
-      <source src={ethvideo} type="video/mp4" />
-    </video>
-  </div>
+  <div className="flex justify-center md:justify-start md:mt-16">
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="w-[300px] md:w-[360px] rounded-2xl shadow-2xl"
+  >
+    <source src={ethvideo} type="video/mp4" />
+  </video>
+</div>
 </div>
 
       </div>
