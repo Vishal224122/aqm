@@ -167,30 +167,30 @@ export default function Home() {
       {/* Digital Banking Section */}
       <div className="bg-black text-white py-20">
         <div className="w-full text-center mb-16">
-    <h1
-  className="text-lg md:text-2xl font-bold leading-snug mb-4"
-  style={{ color: "#d8b9ff" }}
+ <h1
+  className="text-2xl sm:text-3xl md:text-4xl font-semibold leading-snug mb-4 text-center px-4 sm:px-6 md:px-0"
+  style={{ color: '#d8b9ff' }}
 >
-  India’s Only Company to Have a Nation-wide <br />
+  India’s Only Company to Have a Nation-wide <br className="hidden sm:block" />
   Voice & Field Operations
 </h1>
-
 
 
         </div>
 
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:gap-16 gap-12 ">
-          <div className="flex-1 flex justify-center ">
-           <video
-  src={india} // replace this with your actual video variable or path
-  autoPlay
-  loop
-  muted
-  playsInline
-  className="h-[450px] md:h-[600px] drop-shadow-2xl rounded-2xl object-cover"
-/>
+      <div className="flex-1 flex justify-center px-2 sm:px-4">
+  <video
+    src={india} // replace this with your actual video variable or path
+    autoPlay
+    loop
+    muted
+    playsInline
+    className="w-full max-w-[420px] sm:max-w-[520px] md:max-w-none h-[380px] sm:h-[480px] md:h-[600px] drop-shadow-2xl rounded-2xl object-contain"
+  />
+</div>
 
-          </div>
+
 
           <div className="flex-1 text-center md:text-left space-y-6">
             {/* <h2 className="text-3xl md:text-4xl font-bold">
@@ -208,14 +208,17 @@ export default function Home() {
 
 {/* in circle with blue tick */}
 <div className="mb-22">
-<ul className="text-gray-300 leading-relaxed px-2 text-xl space-y-8 ">
+<ul className="flex flex-col md:flex-row md:flex-wrap justify-center text-gray-300 leading-relaxed px-2 text-base md:text-xl space-y-4 md:space-y-0 md:gap-8">
   {[
     "AI Solutions for BFSI, Telcos, Utilities, FMCG, Pharma",
     "State-of-the-art Tech for Digital Collections",
     "Outcome-based Pricing Model",
   ].map((item, index) => (
-    <li key={index} className="flex items-start">
-      <span className="bg-blue-600 rounded-full p-1 mr-3 mt-1">
+    <li
+      key={index}
+      className="flex items-start md:items-center md:w-auto w-full"
+    >
+      <span className="bg-blue-600 rounded-full p-1.5 mr-3 mt-1 flex-shrink-0">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -233,19 +236,28 @@ export default function Home() {
 </ul>
 
 
+
   {/* ✅ Stats Cards */}
-            <div className="flex flex-col md:flex-row gap-4 p-4">
-              {statsData.map((stat, index) => (
-                <div
-                  key={index}
-                  className={`${stat.bg} text-white rounded-tl-[30px] rounded-tr-none rounded-bl-none rounded-br-[30px] w-full md:w-1/3 p-6 shadow-md`}
-                >
-                  <p className="text-md font-medium">{stat.title}</p>
-                  {/* <p className="text-sm">{stat.subtitle}</p> */}
-                  <p className="text-md font-bold mt-2">{stat.value}</p>
-                </div>
-              ))}
-            </div>
+           <div className="flex flex-col md:flex-row gap-4 p-4">
+  {statsData.map((stat, index) => (
+    <div
+      key={index}
+      className={`
+        ${stat.bg} 
+        text-white 
+        rounded-tl-[30px] rounded-tr-none rounded-bl-none rounded-br-[30px] 
+        w-[90%] sm:w-[80%] md:w-1/3 
+        p-4 sm:p-5 md:p-6 
+        mx-auto 
+        shadow-md
+      `}
+    >
+      <p className="text-sm sm:text-md font-medium">{stat.title}</p>
+      <p className="text-sm sm:text-md font-bold mt-2">{stat.value}</p>
+    </div>
+  ))}
+</div>
+
 
             <Link
               to="/services"
@@ -283,12 +295,13 @@ export default function Home() {
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-center md:gap-4 gap-6 mt-20">
   {/* Left Section */}
   <div className="md:w-1/2 px-4">
-    <h3
-      className="text-lg md:text-2xl font-bold leading-snug mb-4"
-      style={{ color: "#d8b9ff" }}
-    >
-      Comprehensive Receivables Management Services
-    </h3>
+   <h3
+  className="text-2xl sm:text-3xl md:text-4xl font-semibold leading-snug mb-4"
+  style={{ color: "#d8b9ff" }}
+>
+  Comprehensive Receivables Management Services
+</h3>
+
 
     <h3
       className="text-sm md:text-xl font-semibold leading-snug  text-white mb-8"
@@ -368,7 +381,7 @@ export default function Home() {
       
 
       {/* ✅ Replaced "India Map" Section with AI Solutions */}
-      <section className="bg-black text-white py-20">
+      {/* <section className="bg-black text-white py-20"> */}
         <div className="max-w-7xl mx-auto text-center px-6">
           {/* <h2 className="text-3xl md:text-4xl font-bold">
             lorem <span className="text-blue-400">Lorem, ipsum.</span> lorem
@@ -466,7 +479,7 @@ export default function Home() {
       
 
         </div>
-      </section>
+      {/* </section> */}
 
       {/* Partnerships */}
       {/* <section className="bg-black text-white py-20 px-6 text-center">

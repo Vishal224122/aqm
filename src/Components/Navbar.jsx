@@ -104,7 +104,7 @@ export default function Navbar() {
           >
             Services
           </NavLink>
-          <NavLink
+          {/* <NavLink
             to="/Caascloud"
             onClick={() => setIsMenuOpen(false)}
             className={({ isActive }) =>
@@ -114,7 +114,7 @@ export default function Navbar() {
             }
           >
             CaaS Cloud
-          </NavLink>
+          </NavLink> */}
           <NavLink
             to="/aboutus"
             onClick={() => setIsMenuOpen(false)}

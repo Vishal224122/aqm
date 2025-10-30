@@ -2,7 +2,7 @@
 import { NavLink } from "react-router-dom";
 import { FaLinkedin, FaFacebook } from "react-icons/fa";
 import earthImg from "../Images/earth.jpg";
-import logoAqm from "../Images/aqm.png";
+import logoAqm from "../Images/aqmm.png";
 
 export default function Footer() {
   return (
@@ -32,23 +32,24 @@ export default function Footer() {
         </div>
 
         {/* Middle - Links */}
-        <div className="flex flex-wrap justify-center gap-6 text-sm">
-          <NavLink to="/" className="hover:text-sky-400">
-            Home
-          </NavLink>
-          <NavLink to="/services" className="hover:text-sky-400">
-            Services
-          </NavLink>
-          {/* <NavLink to="/Caascloud" className="hover:text-sky-400">
-            CaaS Cloud
-          </NavLink> */}
-          <NavLink to="/aboutus" className="hover:text-sky-400">
-            About Us
-          </NavLink>
-          <NavLink to="/contact" className="hover:text-sky-400">
-            Contact
-          </NavLink>
-        </div>
+       <div className="hidden md:flex flex-wrap justify-center gap-6 text-sm">
+  <NavLink to="/" className="hover:text-sky-400">
+    Home
+  </NavLink>
+  <NavLink to="/services" className="hover:text-sky-400">
+    Services
+  </NavLink>
+  {/* <NavLink to="/Caascloud" className="hover:text-sky-400">
+    CaaS Cloud
+  </NavLink> */}
+  <NavLink to="/aboutus" className="hover:text-sky-400">
+    About Us
+  </NavLink>
+  <NavLink to="/contact" className="hover:text-sky-400">
+    Contact
+  </NavLink>
+</div>
+
 
         {/* Right - Contact */}
         <div className="flex flex-col items-center md:items-end gap-2">
