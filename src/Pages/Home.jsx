@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import demoImage from "../Images/hero5.mp4";
+import mobiledemoImage from "../Images/hero6.mp4"
 import indiaMap from "../Images/india_map.mp4";
 import tpeImg from "../Images/tpe.png";
 import paytmImg from "../Images/paytm3.png";
@@ -78,10 +79,10 @@ export default function Home() {
   };
 
   const statsData = [
-    { title: "Telecallers", subtitle: "& Backend staff", value: "3500+", bg: "bg-[#a0cbee]" },
-    { title: "FOS", subtitle: "on Field", value: "2500+", bg: "bg-[#e0eef7]" },
-    { title: "Collections", subtitle: "covered", value: "21k Cr / Yr", bg: "bg-[#f7e4e6]" },
-    { title: "Borrowers", subtitle: "covered", value: "5 Mn / Yr.", bg: "bg-[#e1c3ff]" },
+    { title: "Telecallers",  value: "3500+", bg: "bg-[#a0cbee]" },
+    { title: "FOS",  value: "2500+", bg: "bg-[#e0eef7]" },
+    { title: "Collections",  value: "21k Cr / Yr", bg: "bg-[#f7e4e6]" },
+    { title: "Borrowers",  value: "5 Mn / Yr.", bg: "bg-[#e1c3ff]" },
   ];
 
 
@@ -137,7 +138,27 @@ export default function Home() {
   return (
     <section className="bg-black text-white lg:mt-[-40px]">
       {/* Hero Section */}
-      <video src={demoImage} autoPlay muted loop playsInline />
+      {/* Laptop / Tablet view */}
+<video
+  src={demoImage}
+  autoPlay
+  muted
+  loop
+  playsInline
+  className="hidden sm:block w-full"
+></video>
+
+{/* Mobile view */}
+<video
+  src={mobiledemoImage}
+  autoPlay
+  muted
+  loop
+  playsInline
+  className="block sm:hidden w-full"
+></video>
+
+
       <div>
         <div className="w-[40%] flex items-center ">
           <div className="ms-20"></div>
@@ -243,25 +264,31 @@ export default function Home() {
               </ul>
 
               {/* ✅ Stats Cards */}
-              <div className="flex flex-col md:flex-row gap-4 p-4">
-                {statsData.map((stat, index) => (
-                  <div
-                    key={index}
-                    className={`
-          ${stat.bg} 
-          text-black 
-          rounded-tl-[30px] rounded-tr-none rounded-bl-none rounded-br-[30px] 
-          w-[90%] sm:w-[80%] md:w-1/3 
-          p-4 sm:p-5 md:p-6 
-          mx-auto 
-          shadow-md
-        `}
-                  >
-                    <p className="text-sm sm:text-md font-medium">{stat.title}</p>
-                    <p className="text-sm sm:text-md font-bold mt-2">{stat.value}</p>
-                  </div>
-                ))}
-              </div>
+        <div className="flex flex-col md:flex-row gap-4 p-4 justify-center">
+  {statsData.map((stat, index) => (
+    <div
+      key={index}
+      className={`
+        ${stat.bg}
+        text-black
+        rounded-tl-[30px] rounded-tr-none rounded-bl-none rounded-br-[30px]
+        w-[90%] sm:w-[80%] md:w-[22%]
+        p-4 sm:p-5 md:p-6
+        mx-auto md:mx-0
+        shadow-md
+        flex flex-col justify-center
+      `}
+    >
+      <p className="text-base sm:text-lg font-bold">
+        {stat.title}{" "}
+        <span className="font-normal">{stat.subtitle}</span>
+      </p>
+      <p className="text-sm sm:text-md font-medium mt-2">{stat.value}</p>
+    </div>
+  ))}
+</div>
+
+
 
               <Link
                 to="/services"
@@ -313,30 +340,33 @@ export default function Home() {
             >
               Complete Outsourcing of the Credit Cycle
             </h3>
+<ul className="flex flex-col md:flex-row md:flex-wrap justify-left text-gray-300 leading-relaxed  text-base md:text-xl space-y-4 md:space-y-0 md:gap-8">
+  {[
+    "AQM to Enable a Level Playing Field for the Industry",
+    "Outsource the Entire Collections Function",
+    "Move From Outsourcing to Business Partnership",
+  ].map((item, index) => (
+    <li
+      key={index}
+      className=" flex items-start md:items-center md:w-auto w-full text-left"
+    >
+      <span className="bg-blue-600 rounded-full p-1 mr-3 mt-1 flex items-center justify-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={3}
+          stroke="white"
+          className="w-3 h-3"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
+      </span>
+      <span className="flex-1">{item}</span>
+    </li>
+  ))}
+</ul>
 
-            <ul className="space-y-8">
-              {[
-                "AQM to Enable a Level Playing Field for the Industry",
-                "Outsource the Entire Collections Function",
-                "Move From Outsourcing to Business Partnership",
-              ].map((item, index) => (
-                <li key={index} className="flex items-start text-lg text-gray-300">
-                  <span className="bg-blue-600 rounded-full p-1 mr-3 mt-1 flex items-center justify-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={3}
-                      stroke="white"
-                      className="w-3 h-3"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                    </svg>
-                  </span>
-                  {item}
-                </li>
-              ))}
-            </ul>
           </div>
 
           {/* Right Section */}

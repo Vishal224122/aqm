@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-import logo from "../Images/aqmm.png"; // Update with your actual logo path
+import logo from "../Images/aqmmm.png"; // Update with your actual logo path
 import Swal from "sweetalert2";
 
 export default function ContactPage() {

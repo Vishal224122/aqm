@@ -2,7 +2,7 @@
 import { NavLink } from "react-router-dom";
 import { FaLinkedin, FaFacebook } from "react-icons/fa";
 import earthImg from "../Images/earth.jpg";
-import logoAqm from "../Images/aqmm.png";
+import logoAqm from "../Images/aqmmm.png";
 
 export default function Footer() {
   return (
