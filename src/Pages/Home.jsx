@@ -47,7 +47,7 @@ export default function Home() {
     setLoaded(true);
   }, []);
 
-   const settings = {
+  const settings = {
     dots: false,
     infinite: true,
     slidesToShow: 8,
@@ -78,34 +78,34 @@ export default function Home() {
   };
 
   const statsData = [
-    { title: "Telecallers", subtitle: "& Backend staff", value: "3500+", bg: "bg-teal-400" },
-    { title: "FOS", subtitle: "on Field", value: "2500+", bg: "bg-sky-500" },
-    { title: "Collections", subtitle: "covered", value: "21k Cr / Yr", bg: "bg-blue-800" },
-    { title: "Borrowers", subtitle: "covered", value: "5 Mn / Yr.", bg: "bg-purple-800" },
-
+    { title: "Telecallers", subtitle: "& Backend staff", value: "3500+", bg: "bg-[#a0cbee]" },
+    { title: "FOS", subtitle: "on Field", value: "2500+", bg: "bg-[#e0eef7]" },
+    { title: "Collections", subtitle: "covered", value: "21k Cr / Yr", bg: "bg-[#f7e4e6]" },
+    { title: "Borrowers", subtitle: "covered", value: "5 Mn / Yr.", bg: "bg-[#e1c3ff]" },
   ];
 
- const features = [
-  {
-    icon: <Shield size={40} className="text-white mb-4" />,
-    title: "Highly Secure DPDP compliant",
-    desc: "Compliance with security standards & data protection regulations",
-  },
-  {
-    icon: <Lock size={40} className="text-white mb-4" />,
-    title: "SSO + Session-level Access Control",
-    desc: "Secure authentication and granular permission management for all users",
-  },
-  {
-    icon: <EyeOff size={40} className="text-white mb-4" />,
-    title: "Field Masking, Tab-only Co-browse, No Full Screen",
-    desc: "Enhanced privacy protection during collaborative sessions",
-  },
-];
+
+  const features = [
+    {
+      icon: <Shield size={40} className="text-white mb-4" />,
+      title: "Highly Secure DPDP compliant",
+      desc: "Compliance with security standards & data protection regulations",
+    },
+    {
+      icon: <Lock size={40} className="text-white mb-4" />,
+      title: "SSO + Session-level Access Control",
+      desc: "Secure authentication and granular permission management for all users",
+    },
+    {
+      icon: <EyeOff size={40} className="text-white mb-4" />,
+      title: "Field Masking, Tab-only Co-browse, No Full Screen",
+      desc: "Enhanced privacy protection during collaborative sessions",
+    },
+  ];
 
 
 
-// counter section
+  // counter section
 
   // const [visible, setVisible] = useState(false);
   // const sectionRef = useRef(null);
@@ -167,192 +167,197 @@ export default function Home() {
       {/* Digital Banking Section */}
       <div className="bg-black text-white py-20">
         <div className="w-full text-center mb-16">
- <h1
-  className="text-2xl sm:text-3xl md:text-4xl font-semibold leading-snug mb-4 text-center px-4 sm:px-6 md:px-0"
-  style={{ color: '#d8b9ff' }}
->
-  India’s Only Company to Have a Nation-wide <br className="hidden sm:block" />
-  Voice & Field Operations
-</h1>
+          <h1
+            className="text-2xl sm:text-3xl md:text-4xl font-semibold leading-snug mb-4 text-center px-4 sm:px-6 md:px-0"
+            style={{ color: '#d8b9ff' }}
+          >
+            India’s Only Company to Have a Nation-wide <br className="hidden sm:block" />
+            Voice & Field Operations
+          </h1>
 
 
         </div>
 
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:gap-16 gap-12 ">
-      <div className="flex-1 flex justify-center px-2 sm:px-4">
-  <video
-    src={india} // replace this with your actual video variable or path
-    autoPlay
-    loop
-    muted
-    playsInline
-    className="w-full max-w-[420px] sm:max-w-[520px] md:max-w-none h-[380px] sm:h-[480px] md:h-[600px] drop-shadow-2xl rounded-2xl object-contain"
-  />
+          {/* <div className="flex-1 flex justify-center px-2 sm:px-4">
+            <video
+              src={india}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="
+      w-[100vw] sm:w-auto
+      h-[480px] sm:h-[480px] md:h-[650px] lg:h-[720px]
+      drop-shadow-2xl rounded-2xl object-contain
+    "
+            />
+          </div> */}
+          <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:gap-16 gap-12 -mt-20 md:mt-0">
+  <div className="flex-1 flex justify-center px-2 sm:px-4">
+    <video
+      src={india}
+      autoPlay
+      loop
+      muted
+      playsInline
+      className="
+        w-[100vw] sm:w-auto
+        h-[480px] sm:h-[480px] md:h-[650px] lg:h-[720px]
+        drop-shadow-2xl rounded-2xl object-contain
+      "
+    />
+  </div>
 </div>
 
 
+          <div className="flex-1 text-center md:text-left space-y-6 -mt-20">
+            {/* in circle with blue tick */}
+            <div className="mb-22">
+              <ul className=" flex flex-col md:flex-row md:flex-wrap justify-left text-gray-300 leading-relaxed px-2 text-base md:text-xl space-y-4 md:space-y-0 md:gap-8">
+                {[
+                  "AI Solutions for BFSI, Telcos, Utilities, FMCG, Pharma",
+                  "State-of-the-art Tech for Digital Collections",
+                  "Outcome-based Pricing Model",
+                ].map((item, index) => (
+                  <li
+                    key={index}
+                    className="ms-2 flex items-start md:items-center md:w-auto w-full text-left"
+                  >
+                    {/* <span className="bg-blue-600 rounded-full p-1.5 mr-3 mt-1 flex-shrink-0"></span> */}
+                    <span className="bg-blue-600 rounded-full p-1 mr-3 mt-1 flex items-center justify-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={3}
+                        stroke="white"
+                        className="w-3 h-3"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </span>
+                    <span className="flex-1">{item}</span>
+                  </li>
+                ))}
+              </ul>
 
-          <div className="flex-1 text-center md:text-left space-y-6">
-            {/* <h2 className="text-3xl md:text-4xl font-bold">
-              Lorem ipsum dolor sit.
-            </h2> */}
-            {/* <p className="text-xl font-medium" style={{ color: "#d8b9ff" }}>
-              Lorem ipsum dolor sit.
-            </p> */}
+              {/* ✅ Stats Cards */}
+              <div className="flex flex-col md:flex-row gap-4 p-4">
+                {statsData.map((stat, index) => (
+                  <div
+                    key={index}
+                    className={`
+          ${stat.bg} 
+          text-black 
+          rounded-tl-[30px] rounded-tr-none rounded-bl-none rounded-br-[30px] 
+          w-[90%] sm:w-[80%] md:w-1/3 
+          p-4 sm:p-5 md:p-6 
+          mx-auto 
+          shadow-md
+        `}
+                  >
+                    <p className="text-sm sm:text-md font-medium">{stat.title}</p>
+                    <p className="text-sm sm:text-md font-bold mt-2">{stat.value}</p>
+                  </div>
+                ))}
+              </div>
 
-         {/* <ul className="text-gray-300 leading-relaxed px-4 text-xl list-disc space-y-2">
-  <li>AI Solutions for BFSI, Telcos, Utilities, FMCG, Pharma.</li>
-  <li>State-of-the-art Tech for Digital Collections.</li>
-  <li>Outcome-based Pricing Model.</li>
-</ul> */}
-
-{/* in circle with blue tick */}
-<div className="mb-22">
-<ul className="flex flex-col md:flex-row md:flex-wrap justify-center text-gray-300 leading-relaxed px-2 text-base md:text-xl space-y-4 md:space-y-0 md:gap-8">
-  {[
-    "AI Solutions for BFSI, Telcos, Utilities, FMCG, Pharma",
-    "State-of-the-art Tech for Digital Collections",
-    "Outcome-based Pricing Model",
-  ].map((item, index) => (
-    <li
-      key={index}
-      className="flex items-start md:items-center md:w-auto w-full"
-    >
-      <span className="bg-blue-600 rounded-full p-1.5 mr-3 mt-1 flex-shrink-0">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={3}
-          stroke="white"
-          className="w-3 h-3"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-        </svg>
-      </span>
-      <span>{item}</span>
-    </li>
-  ))}
-</ul>
-
-
-
-  {/* ✅ Stats Cards */}
-           <div className="flex flex-col md:flex-row gap-4 p-4">
-  {statsData.map((stat, index) => (
-    <div
-      key={index}
-      className={`
-        ${stat.bg} 
-        text-white 
-        rounded-tl-[30px] rounded-tr-none rounded-bl-none rounded-br-[30px] 
-        w-[90%] sm:w-[80%] md:w-1/3 
-        p-4 sm:p-5 md:p-6 
-        mx-auto 
-        shadow-md
-      `}
-    >
-      <p className="text-sm sm:text-md font-medium">{stat.title}</p>
-      <p className="text-sm sm:text-md font-bold mt-2">{stat.value}</p>
-    </div>
-  ))}
-</div>
-
-
-            <Link
-              to="/services"
-              className="inline-flex items-center gap-2 text-sky-400 font-medium hover:underline"
-            >
-              Know More <ArrowRight size={18} />
-            </Link>
+              <Link
+                to="/services"
+                className="inline-flex items-center gap-2 text-sky-400 font-medium hover:underline"
+              >
+                Know More <ArrowRight size={18} />
+              </Link>
             </div>
+
           </div>
         </div>
 
-{/* Ticker Section */}
-          <Marquee>
-        <div className="flex gap-8">
-          <img src={rblImg} alt="Business" className="h-30" />
-          <img src={sbiImg} alt="Story" className="h-30" />
-          <img src={viImg} alt="Story" className="h-30" />
-          <img src={puneImg} alt="Story" className="h-30" />
-          <img src={pinelabsImg} alt="Business" className="h-30" />
-          <img src={paytmImg} alt="Story" className="h-30" />
-          <img src={nykaaImg} alt="Story" className="h-30" />
-          <img src={axisclientImg} alt="Story" className="h-30" />
-          <img src={CholamandalamImg} alt="Business" className="h-30" />
-          <img src={bajajImg} alt="Story" className="h-30" />
-          <img src={axismaxImg} alt="Story" className="h-30" />
-          <img src={axisfinanceImg} alt="af" className="h-30" />
-          <img src={yesImg} alt="yes" className="h-30" />
+        {/* Ticker Section */}
+        <Marquee>
+          <div className="flex gap-8">
+            <img src={rblImg} alt="Business" className="h-30" />
+            <img src={sbiImg} alt="Story" className="h-30" />
+            <img src={viImg} alt="Story" className="h-30" />
+            <img src={puneImg} alt="Story" className="h-30" />
+            <img src={pinelabsImg} alt="Business" className="h-30" />
+            <img src={paytmImg} alt="Story" className="h-30" />
+            <img src={nykaaImg} alt="Story" className="h-30" />
+            <img src={axisclientImg} alt="Story" className="h-30" />
+            <img src={CholamandalamImg} alt="Business" className="h-30" />
+            <img src={bajajImg} alt="Story" className="h-30" />
+            <img src={axismaxImg} alt="Story" className="h-30" />
+            <img src={axisfinanceImg} alt="af" className="h-30" />
+            <img src={yesImg} alt="yes" className="h-30" />
 
-          <img src={hclImg} alt="hcl" className="h-30 pr-8" />
-        </div>
-      </Marquee>
+            <img src={hclImg} alt="hcl" className="h-30 pr-8" />
+          </div>
+        </Marquee>
 
-          {/* Mobile Video Section */}
+        {/* Mobile Video Section */}
 
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-center md:gap-4 gap-6 mt-20">
-  {/* Left Section */}
-  <div className="md:w-1/2 px-4">
-   <h3
-  className="text-2xl sm:text-3xl md:text-4xl font-semibold leading-snug mb-4"
-  style={{ color: "#d8b9ff" }}
->
-  Comprehensive Receivables Management Services
-</h3>
-
-
-    <h3
-      className="text-sm md:text-xl font-semibold leading-snug  text-white mb-8"
-    >
-      Complete Outsourcing of the Credit Cycle
-    </h3>
-
-    <ul className="space-y-8">
-      {[
-        "AQM to Enable a Level Playing Field for the Industry",
-        "Outsource the Entire Collections Function",
-        "Move From Outsourcing to Business Partnership",
-      ].map((item, index) => (
-        <li key={index} className="flex items-start text-lg text-gray-300">
-          <span className="bg-blue-600 rounded-full p-1 mr-3 mt-1 flex items-center justify-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={3}
-              stroke="white"
-              className="w-3 h-3"
+        <div className="container mx-auto flex flex-col md:flex-row items-center justify-center md:gap-4 gap-6 mt-20">
+          {/* Left Section */}
+          <div className="md:w-1/2 px-4">
+            <h3
+              className="text-2xl sm:text-3xl md:text-4xl font-semibold leading-snug mb-4"
+              style={{ color: "#d8b9ff" }}
             >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-            </svg>
-          </span>
-          {item}
-        </li>
-      ))}
-    </ul>
-  </div>
+              Comprehensive Receivables Management Services
+            </h3>
 
-  {/* Right Section */}
-  <div className="flex justify-center md:justify-start md:mt-16">
-  <video
-    autoPlay
-    muted
-    loop
-    playsInline
-    className="w-[300px] md:w-[360px] rounded-2xl shadow-2xl"
-  >
-    <source src={ethvideo} type="video/mp4" />
-  </video>
-</div>
-</div>
+
+            <h3
+              className="text-sm md:text-xl font-semibold leading-snug  text-white mb-8"
+            >
+              Complete Outsourcing of the Credit Cycle
+            </h3>
+
+            <ul className="space-y-8">
+              {[
+                "AQM to Enable a Level Playing Field for the Industry",
+                "Outsource the Entire Collections Function",
+                "Move From Outsourcing to Business Partnership",
+              ].map((item, index) => (
+                <li key={index} className="flex items-start text-lg text-gray-300">
+                  <span className="bg-blue-600 rounded-full p-1 mr-3 mt-1 flex items-center justify-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={3}
+                      stroke="white"
+                      className="w-3 h-3"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Right Section */}
+          <div className="flex justify-center md:justify-start md:mt-16">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-[300px] md:w-[360px] rounded-2xl shadow-2xl"
+            >
+              <source src={ethvideo} type="video/mp4" />
+            </video>
+          </div>
+        </div>
 
       </div>
 
       {/* Stats Section */}
-    
-       {/* <div
+
+      {/* <div
       ref={sectionRef}
       className="mt-32 grid grid-cols-2 md:grid-cols-4 text-center gap-8"
     >
@@ -375,23 +380,23 @@ export default function Home() {
       ))}
     </div> */}
 
-      
+
 
       {/* Mobile Video Section */}
-      
+
 
       {/* ✅ Replaced "India Map" Section with AI Solutions */}
       {/* <section className="bg-black text-white py-20"> */}
-        <div className="max-w-7xl mx-auto text-center px-6">
-          {/* <h2 className="text-3xl md:text-4xl font-bold">
+      <div className="max-w-7xl mx-auto text-center px-6">
+        {/* <h2 className="text-3xl md:text-4xl font-bold">
             lorem <span className="text-blue-400">Lorem, ipsum.</span> lorem
           </h2> */}
-          {/* <p className="mt-4 text-lg text-gray-300">
+        {/* <p className="mt-4 text-lg text-gray-300">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat!
             Lorem ipsum dolor sit amet consectetur.
           </p> */}
 
-          {/* <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        {/* <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {[
               {
                 title: "AI-Powered Telesales",
@@ -449,36 +454,36 @@ export default function Home() {
               </div>
             ))}
           </div> */}
-          
- <div className="max-w-6xl mx-auto px-6 mb-16">
-  <h2
-    className="text-center text-2xl md:text-3xl font-bold mb-8 tracking-wide"
-    style={{ color: "#d8b9ff" }}
-  >
-    SECURE & COMPLIANT
-  </h2>
 
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-    {features.map((item, index) => (
-      <div
-        key={index}
-        className="text-center rounded-lg p-6 transition-transform duration-300 transform hover:scale-105 hover:shadow-xl border border-gray-500 bg-black"
-      >
-        <div className="flex justify-center mb-3">{item.icon}</div>
-        <h3 className="text-lg md:text-xl font-semibold text-white mb-2">
-          {item.title}
-        </h3>
-        <p className="text-sm text-gray-300">{item.desc}</p>
-      </div>
-    ))}
-  </div>
-</div>
+        <div className="max-w-6xl mx-auto px-6 mb-16">
+          <h2
+            className="text-center text-2xl md:text-3xl font-bold mb-8 tracking-wide"
+            style={{ color: "#d8b9ff" }}
+          >
+            SECURE & COMPLIANT
+          </h2>
 
-
-
-      
-
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {features.map((item, index) => (
+              <div
+                key={index}
+                className="text-center rounded-lg p-6 transition-transform duration-300 transform hover:scale-105 hover:shadow-xl border border-gray-500 bg-black"
+              >
+                <div className="flex justify-center mb-3">{item.icon}</div>
+                <h3 className="text-lg md:text-xl font-semibold text-white mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-sm text-gray-300">{item.desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
+
+
+
+
+
+      </div>
       {/* </section> */}
 
       {/* Partnerships */}
