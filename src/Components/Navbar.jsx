@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react"; // ✅ icons for menu toggle
-import logoAqm from "../Images/aqmmm.png";
+import logoAqm from "../Images/aqmmmm.png";
 import ContactModal from "./ContactModal";
 
 export default function Navbar() {
@@ -10,11 +10,11 @@ export default function Navbar() {
 
   return (
     <div>
-      <nav className="fixed top-0 left-0 w-full z-[9999] bg-black/90 backdrop-blur-md text-white px-6 flex items-center justify-between shadow-md">
+      <nav className="fixed top-0 left-0 w-full z-[9999] bg-black/90 backdrop-blur-md text-white px-6 flex items-center justify-between shadow-md py-1.5">
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <NavLink to="/" onClick={() => setIsMenuOpen(false)}>
-            <img src={logoAqm} alt="AQM Logo" className="h-[80px] w-auto" />
+            <img src={logoAqm} alt="AQM Logo" className="h-[30px] w-[90px]" />
           </NavLink>
         </div>
 

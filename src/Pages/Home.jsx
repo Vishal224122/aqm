@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import demoImage from "../Images/hero5.mp4";
+import demoImage from "../Images/hero7.mp4";
 import mobiledemoImage from "../Images/hero6.mp4"
 import indiaMap from "../Images/india_map.mp4";
 import tpeImg from "../Images/tpe.png";
@@ -131,12 +131,12 @@ export default function Home() {
   //   );
 
   //   if (sectionRef.current) observer.observe(sectionRef.current);
-  //   return () => observer.disconnect();
+  //   return () => observer.disconnect();  lg:mt-[-40px]
   // }, []);
 
 
   return (
-    <section className="bg-black text-white lg:mt-[-40px]">
+    <section className="bg-black text-white lg:mt-[-40px] ">
       {/* Hero Section */}
       {/* Laptop / Tablet view */}
 <video
@@ -145,7 +145,7 @@ export default function Home() {
   muted
   loop
   playsInline
-  className="hidden sm:block w-full"
+  className="hidden sm:block w-full relative top-[-100px]"
 ></video>
 
 {/* Mobile view */}
@@ -224,8 +224,8 @@ export default function Home() {
       playsInline
       className="
         w-[100vw] sm:w-auto
-        h-[480px] sm:h-[480px] md:h-[650px] lg:h-[720px]
-        drop-shadow-2xl rounded-2xl object-contain
+        h-[480px] sm:h-[480px] md:h-[650px] lg:h-[600px]
+        drop-shadow-2xl rounded-2xl object-contain 
       "
     />
   </div>
@@ -234,7 +234,7 @@ export default function Home() {
 
           <div className="flex-1 text-center md:text-left space-y-6 -mt-20">
             {/* in circle with blue tick */}
-            <div className="mb-22">
+            <div className="">
               <ul className=" flex flex-col md:flex-row md:flex-wrap justify-left text-gray-300 leading-relaxed px-2 text-base md:text-xl space-y-4 md:space-y-0 md:gap-8">
                 {[
                   "AI Solutions for BFSI, Telcos, Utilities, FMCG, Pharma",
@@ -264,29 +264,49 @@ export default function Home() {
               </ul>
 
               {/* ✅ Stats Cards */}
-        <div className="flex flex-col md:flex-row gap-4 p-4 justify-center">
-  {statsData.map((stat, index) => (
-    <div
-      key={index}
-      className={`
-        ${stat.bg}
-        text-black
-        rounded-tl-[30px] rounded-tr-none rounded-bl-none rounded-br-[30px]
-        w-[90%] sm:w-[80%] md:w-[22%]
-        p-4 sm:p-5 md:p-6
-        mx-auto md:mx-0
-        shadow-md
-        flex flex-col justify-center
-      `}
-    >
-      <p className="text-base sm:text-lg font-bold">
-        {stat.title}{" "}
-        <span className="font-normal">{stat.subtitle}</span>
-      </p>
-      <p className="text-sm sm:text-md font-medium mt-2">{stat.value}</p>
-    </div>
-  ))}
-</div>
+      <>
+  <style>
+    {`
+      .hexagon {
+        /* Same color as your old stat.bg (gradient purple-blue) */
+        background: linear-gradient(135deg, #d8b9ff 0%, #a88bff 100%);
+        clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+      }
+      .hexagon:hover {
+        transform: scale(1.05);
+      }
+    `}
+  </style>
+
+  <div className="flex flex-col md:flex-row gap-4 p-4 justify-center">
+    {statsData.map((stat, index) => (
+      <div
+        key={index}
+        className="
+          text-black
+          font-bold
+          w-[120px] h-[110px] sm:w-[130px] sm:h-[120px] md:w-[140px] md:h-[130px]
+          p-4 sm:p-5 md:p-6
+          mx-auto md:mx-0
+          shadow-md
+          flex flex-col justify-center items-center
+          text-center
+          hexagon
+        "
+      >
+        <p className="text-sm sm:text-base md:text-lg font-bold">
+          {stat.title}
+        </p>
+        <p className="text-xs sm:text-sm md:text-base font-semibold mt-1">
+          {stat.value}
+        </p>
+      </div>
+    ))}
+  </div>
+</>
+
 
 
 
@@ -490,7 +510,7 @@ export default function Home() {
             className="text-center text-2xl md:text-3xl font-bold mb-8 tracking-wide"
             style={{ color: "#d8b9ff" }}
           >
-            SECURE & COMPLIANT
+            Secure & Compliant
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

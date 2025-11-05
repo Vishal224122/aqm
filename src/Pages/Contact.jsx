@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-import logo from "../Images/aqmmm.png"; // Update with your actual logo path
+import logo from "../Images/aqmmmm.png"; // Update with your actual logo path
 import Swal from "sweetalert2";
 
 export default function ContactPage() {
@@ -79,7 +79,7 @@ export default function ContactPage() {
 
         {/* Left Section */}
         <div className="w-full md:w-1/2 flex flex-col space-y-4">
-          <img src={logo} alt="aqm Logo" className="h-[100px] w-[100px]" />
+          <img src={logo} alt="aqm Logo" className="h-[40px] w-[90px]" />
           <h2 className="text-2xl font-semibold leading-snug">
             Reach us at <br />
           </h2>

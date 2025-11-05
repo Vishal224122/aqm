@@ -2,7 +2,7 @@
 import { NavLink } from "react-router-dom";
 import { FaLinkedin, FaFacebook } from "react-icons/fa";
 import earthImg from "../Images/earth.jpg";
-import logoAqm from "../Images/aqmmm.png";
+import logoAqm from "../Images/aqmmmm.png";
 
 export default function Footer() {
   return (
@@ -28,7 +28,7 @@ export default function Footer() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Left - Logo */}
         <div className="flex flex-col items-center md:items-start mr-8">
-          <img src={logoAqm} alt="AQM Logo" className="h-[90px] w-auto" />
+          <img src={logoAqm} alt="AQM Logo" className="h-[40px] w-[90px]" />
         </div>
 
         {/* Middle - Links */}
