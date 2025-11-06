@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import demoImage from "../Images/hero8.mp4";
-import mobiledemoImage from "../Images/hero6.mp4"
+import mobiledemoImage from "../Images/hero9.mp4"
 import indiaMap from "../Images/india_map.mp4";
 import tpeImg from "../Images/tpe.png";
 import paytmImg from "../Images/paytm3.png";
@@ -330,23 +330,23 @@ background: linear-gradient(135deg, #5CD2F4 0%, #A05DF5 50%, #FF8BE6 100%);
 
         {/* Mobile Video Section */}
 
-        <div className="container mx-auto flex flex-col md:flex-row items-center justify-center md:gap-4 gap-8 mt-16 px-4">
+        <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center lg:gap-8 gap-10 mt-16 px-4">
   {/* Left Section */}
-  <div className="md:w-1/2 w-full">
+  <div className="lg:w-1/2 w-full text-center lg:text-left">
     <h3
-      className="text-xl sm:text-2xl md:text-4xl font-semibold leading-snug mb-3 text-center md:text-left whitespace-normal md:whitespace-nowrap"
+      className="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-snug mb-3"
       style={{ color: "#d8b9ff" }}
     >
       Comprehensive Receivables Management Services
     </h3>
 
     <h3
-      className="text-sm sm:text-base md:text-xl font-semibold leading-snug text-white mb-6 text-center md:text-left"
+      className="text-base sm:text-lg lg:text-xl font-semibold leading-snug text-white mb-6"
     >
       Complete Outsourcing of the Credit Cycle
     </h3>
 
-    <ul className="flex flex-col md:flex-row md:flex-wrap justify-start text-gray-300 leading-relaxed text-sm sm:text-base md:text-xl space-y-4 md:space-y-0 md:gap-8">
+    <ul className="flex flex-col lg:flex-row lg:flex-wrap justify-start text-gray-300 leading-relaxed text-sm sm:text-base lg:text-lg space-y-4 lg:space-y-0 lg:gap-8">
       {[
         "AQM to Enable a Level Playing Field for the Industry",
         "Outsource the Entire Collections Function",
@@ -354,7 +354,7 @@ background: linear-gradient(135deg, #5CD2F4 0%, #A05DF5 50%, #FF8BE6 100%);
       ].map((item, index) => (
         <li
           key={index}
-          className="flex items-start md:items-center md:w-auto w-full text-left"
+          className="flex items-start lg:items-center w-full lg:w-auto text-left"
         >
           <span className="bg-blue-600 rounded-full p-1 mr-3 mt-1 flex items-center justify-center">
             <svg
@@ -375,19 +375,19 @@ background: linear-gradient(135deg, #5CD2F4 0%, #A05DF5 50%, #FF8BE6 100%);
   </div>
 
   {/* Right Section */}
-  <div className="flex justify-center md:justify-start mt-8 md:mt-16 w-full md:w-auto">
-  <video
-    autoPlay
-    muted
-    loop
-    playsInline
-    className="w-[240px] sm:w-[300px] md:w-[360px] rounded-2xl shadow-2xl md:ml-15"
-  >
-    <source src={ethvideo} type="video/mp4" />
-  </video>
+  <div className="flex justify-center lg:justify-start mt-8 lg:mt-16 w-full lg:w-auto">
+    <video
+      autoPlay
+      muted
+      loop
+      playsInline
+      className="w-[260px] sm:w-[320px] md:w-[340px] lg:w-[360px] rounded-2xl shadow-2xl lg:mr-20"
+    >
+      <source src={ethvideo} type="video/mp4" />
+    </video>
+  </div>
 </div>
 
-</div>
 
 
       </div>
