@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import demoImage from "../Images/hero7.mp4";
+import demoImage from "../Images/hero8.mp4";
 import mobiledemoImage from "../Images/hero6.mp4"
 import indiaMap from "../Images/india_map.mp4";
 import tpeImg from "../Images/tpe.png";
@@ -22,7 +22,7 @@ import axisclientImg from "../Images/axisclient1.png";
 import { ArrowRight } from "lucide-react";
 import india from "../Images/digital1.mp4";
 import techVideo from "../Images/techno.mp4";
-import ethvideo from "../Images/control1.mp4";
+import ethvideo from "../Images/control2.mp4";
 
 import { Shield, Lock, EyeOff } from "lucide-react";
 
@@ -165,32 +165,14 @@ export default function Home() {
         </div>
       </div>
 
-      {/* <Marquee>
-        <div className="flex gap-8">
-          <img src={rblImg} alt="Business" className="h-30" />
-          <img src={sbiImg} alt="Story" className="h-30" />
-          <img src={viImg} alt="Story" className="h-30" />
-          <img src={puneImg} alt="Story" className="h-30" />
-          <img src={pinelabsImg} alt="Business" className="h-30" />
-          <img src={paytmImg} alt="Story" className="h-30" />
-          <img src={nykaaImg} alt="Story" className="h-30" />
-          <img src={axisclientImg} alt="Story" className="h-30" />
-          <img src={CholamandalamImg} alt="Business" className="h-30" />
-          <img src={bajajImg} alt="Story" className="h-30" />
-          <img src={axismaxImg} alt="Story" className="h-30" />
-          <img src={axisfinanceImg} alt="af" className="h-30" />
-          <img src={yesImg} alt="yes" className="h-30" />
-
-          <img src={hclImg} alt="hcl" className="h-30 pr-8" />
-        </div>
-      </Marquee> */}
+     
 
       {/* Digital Banking Section */}
       <div className="bg-black text-white py-20">
         <div className="w-full text-center mb-16">
           <h1
-            className="text-2xl sm:text-3xl md:text-4xl font-semibold leading-snug mb-4 text-center px-4 sm:px-6 md:px-0"
-            style={{ color: '#d8b9ff' }}
+            className="text-2xl   text-sky-400 sm:text-3xl md:text-4xl font-semibold leading-snug mb-4 text-center px-4 sm:px-6 md:px-0"
+            
           >
             India’s Only Company to Have a Nation-wide <br className="hidden sm:block" />
             Voice & Field Operations
@@ -240,6 +222,7 @@ export default function Home() {
                   "AI Solutions for BFSI, Telcos, Utilities, FMCG, Pharma",
                   "State-of-the-art Tech for Digital Collections",
                   "Outcome-based Pricing Model",
+                  "Pan-India coverage with Telecalling, Field and Digital"
                 ].map((item, index) => (
                   <li
                     key={index}
@@ -269,7 +252,7 @@ export default function Home() {
     {`
       .hexagon {
         /* Same color as your old stat.bg (gradient purple-blue) */
-        background: linear-gradient(135deg, #d8b9ff 0%, #a88bff 100%);
+background: linear-gradient(135deg, #5CD2F4 0%, #A05DF5 50%, #FF8BE6 100%);
         clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
         border-radius: 8px;
         transition: transform 0.3s ease;
@@ -280,7 +263,7 @@ export default function Home() {
     `}
   </style>
 
-  <div className="flex flex-col md:flex-row gap-4 p-4 justify-center">
+  <div className="flex flex-col md:flex-row gap-4 p-4 justify-center mt-10">
     {statsData.map((stat, index) => (
       <div
         key={index}
@@ -310,12 +293,15 @@ export default function Home() {
 
 
 
-              <Link
-                to="/services"
-                className="inline-flex items-center gap-2 text-sky-400 font-medium hover:underline"
-              >
-                Know More <ArrowRight size={18} />
-              </Link>
+             <div className="flex justify-end">
+  <Link
+    to="/services"
+    className="inline-flex items-center gap-2 text-sky-400 font-medium hover:underline text-sm"
+  >
+    Know More <ArrowRight size={16} />
+  </Link>
+</div>
+
             </div>
 
           </div>
@@ -335,7 +321,7 @@ export default function Home() {
             <img src={CholamandalamImg} alt="Business" className="h-30" />
             <img src={bajajImg} alt="Story" className="h-30" />
             <img src={axismaxImg} alt="Story" className="h-30" />
-            <img src={axisfinanceImg} alt="af" className="h-30" />
+            {/* <img src={axisfinanceImg} alt="af" className="h-30" /> */}
             <img src={yesImg} alt="yes" className="h-30" />
 
             <img src={hclImg} alt="hcl" className="h-30 pr-8" />
@@ -344,64 +330,65 @@ export default function Home() {
 
         {/* Mobile Video Section */}
 
-        <div className="container mx-auto flex flex-col md:flex-row items-center justify-center md:gap-4 gap-6 mt-20">
-          {/* Left Section */}
-          <div className="md:w-1/2 px-4">
-            <h3
-              className="text-2xl sm:text-3xl md:text-4xl font-semibold leading-snug mb-4"
-              style={{ color: "#d8b9ff" }}
-            >
-              Comprehensive Receivables Management Services
-            </h3>
-
-
-            <h3
-              className="text-sm md:text-xl font-semibold leading-snug  text-white mb-8"
-            >
-              Complete Outsourcing of the Credit Cycle
-            </h3>
-<ul className="flex flex-col md:flex-row md:flex-wrap justify-left text-gray-300 leading-relaxed  text-base md:text-xl space-y-4 md:space-y-0 md:gap-8">
-  {[
-    "AQM to Enable a Level Playing Field for the Industry",
-    "Outsource the Entire Collections Function",
-    "Move From Outsourcing to Business Partnership",
-  ].map((item, index) => (
-    <li
-      key={index}
-      className=" flex items-start md:items-center md:w-auto w-full text-left"
+        <div className="container mx-auto flex flex-col md:flex-row items-center justify-center md:gap-4 gap-8 mt-16 px-4">
+  {/* Left Section */}
+  <div className="md:w-1/2 w-full">
+    <h3
+      className="text-xl sm:text-2xl md:text-4xl font-semibold leading-snug mb-3 text-center md:text-left whitespace-normal md:whitespace-nowrap"
+      style={{ color: "#d8b9ff" }}
     >
-      <span className="bg-blue-600 rounded-full p-1 mr-3 mt-1 flex items-center justify-center">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={3}
-          stroke="white"
-          className="w-3 h-3"
+      Comprehensive Receivables Management Services
+    </h3>
+
+    <h3
+      className="text-sm sm:text-base md:text-xl font-semibold leading-snug text-white mb-6 text-center md:text-left"
+    >
+      Complete Outsourcing of the Credit Cycle
+    </h3>
+
+    <ul className="flex flex-col md:flex-row md:flex-wrap justify-start text-gray-300 leading-relaxed text-sm sm:text-base md:text-xl space-y-4 md:space-y-0 md:gap-8">
+      {[
+        "AQM to Enable a Level Playing Field for the Industry",
+        "Outsource the Entire Collections Function",
+        "Move From Outsourcing to Business Partnership",
+      ].map((item, index) => (
+        <li
+          key={index}
+          className="flex items-start md:items-center md:w-auto w-full text-left"
         >
-          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-        </svg>
-      </span>
-      <span className="flex-1">{item}</span>
-    </li>
-  ))}
-</ul>
-
-          </div>
-
-          {/* Right Section */}
-          <div className="flex justify-center md:justify-start md:mt-16">
-            <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="w-[300px] md:w-[360px] rounded-2xl shadow-2xl"
+          <span className="bg-blue-600 rounded-full p-1 mr-3 mt-1 flex items-center justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={3}
+              stroke="white"
+              className="w-3 h-3"
             >
-              <source src={ethvideo} type="video/mp4" />
-            </video>
-          </div>
-        </div>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+          </span>
+          <span className="flex-1">{item}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+
+  {/* Right Section */}
+  <div className="flex justify-center md:justify-start mt-8 md:mt-16 w-full md:w-auto">
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="w-[240px] sm:w-[300px] md:w-[360px] rounded-2xl shadow-2xl md:ml-15"
+  >
+    <source src={ethvideo} type="video/mp4" />
+  </video>
+</div>
+
+</div>
+
 
       </div>
 
