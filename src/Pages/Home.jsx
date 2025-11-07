@@ -143,7 +143,6 @@ export default function Home() {
   src={demoImage}
   autoPlay
   muted
-  loop
   playsInline
   className="hidden sm:block w-full relative top-[-100px]"
 ></video>
