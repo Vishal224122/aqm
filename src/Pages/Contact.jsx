@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-import logo from "../Images/aqmlogo01.png"; // Update with your actual logo path
+// import logo from "../Images/aqmlogo01.png"; // Update with your actual logo path
 import Swal from "sweetalert2";
 
 export default function ContactPage() {
@@ -79,14 +79,14 @@ export default function ContactPage() {
 
         {/* Left Section */}
         <div className="w-full md:w-1/2 flex flex-col space-y-4">
-          <img src={logo} alt="aqm Logo" className="h-[70px] w-[100px]" />
+          {/* <img src={logo} alt="aqm Logo" className="h-[70px] w-[100px]" /> */}
           <h2 className="text-2xl font-semibold leading-snug">
-            Reach us at <br />
+            Reach us at : <br />
           </h2>
 
           <div className="text-gray-300 space-y-1">
-            <p>info@aqmedge.com</p>
-            <p>778, Udyog Vihar, Phase V, Gurugram - 122016</p>
+            <p>info@aqmedge.com</p><br />
+            <p>778, Udyog Vihar, Phase V, Gurugram - 122016</p><br />
           </div>
 
           {/* Google Map Embed */}

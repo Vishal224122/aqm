@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { CheckCircleIcon, ChartBarIcon } from "@heroicons/react/24/solid";
 import { MdMemory } from "react-icons/md";
 import Services from "../Images/aqmservices2.mp4";
-import MobileServices from "../Images/aqmservices3.mp4"
+import MobileServices from "../Images/aqmsevices4.mp4"
 import Footer from "./Footer";
 import mobileVideo from "../Images/mobile2.mp4";
 import dashboard from "../Images/dashboard1.png"
@@ -139,9 +139,9 @@ export default function OurStory() {
         </div>
 
         {/* Content Section */}
-       <div className=" flex flex-col md:flex-row items-center justify-between gap-16 md:gap-20 -mt-30 px-6 md:px-16">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-16 md:gap-20 -mt-30 px-3 sm:px-4 md:px-16">
   {/* Left Side - Text */}
-<div className="w-full md:w-1/2 space-y-4 mt-8 md:mt-0 -ms-14 md:ms-0">
+  <div className="w-full md:w-1/2 space-y-4 mt-8 md:mt-0 -ms-6 sm:-ms-4 md:ms-0">
     <h3
       className="text-2xl sm:text-3xl md:text-4xl font-semibold"
       style={{ color: "#d8b9ff" }}
@@ -154,32 +154,38 @@ export default function OurStory() {
     </p>
 
     <ul className="space-y-6">
-  {[
-    "Propensity AI Model",
-    "Non-deterministic Workflow",
-    "Self-learning & multi-channel AI Bots",
-    "Speech Analytics & Voice Naturalization",
-    "Sector-specific Scripts",
-    "Role-based Digital Cockpit",
-  ].map((item, index) => (
-    <li key={index} className="flex items-start text-base sm:text-lg text-gray-300">
-      <span className="bg-blue-600 rounded-full p-1 mr-3 mt-1 flex items-center justify-center">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={2.5}
-          stroke="white"
-          className="w-3 h-3 sm:w-4 sm:h-4"
+      {[
+        "Propensity AI Model",
+        "Non-deterministic Workflow",
+        "Self-learning & multi-channel AI Bots",
+        "Speech Analytics & Voice Naturalization",
+        "Sector-specific Scripts",
+        "Role-based Digital Cockpit",
+      ].map((item, index) => (
+        <li
+          key={index}
+          className="flex items-start text-base sm:text-lg text-gray-300"
         >
-          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-        </svg>
-      </span>
-      {item}
-    </li>
-  ))}
-</ul>
-
+          <span className="bg-blue-600 rounded-full p-1 mr-3 mt-1 flex items-center justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2.5}
+              stroke="white"
+              className="w-3 h-3 sm:w-4 sm:h-4"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M5 13l4 4L19 7"
+              />
+            </svg>
+          </span>
+          {item}
+        </li>
+      ))}
+    </ul>
   </div>
 
   {/* Right Side - Image */}
@@ -191,6 +197,7 @@ export default function OurStory() {
     />
   </div>
 </div>
+
 
 
       </section>

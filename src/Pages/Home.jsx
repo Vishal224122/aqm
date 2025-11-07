@@ -155,8 +155,9 @@ export default function Home() {
   muted
   loop
   playsInline
-  className="block sm:hidden w-full"
+  className="block sm:hidden w-full h-auto object-cover object-top mt-3"
 ></video>
+
 
 
       <div>
@@ -249,45 +250,41 @@ export default function Home() {
               {/* ✅ Stats Cards */}
       <>
   <style>
-    {`
-      .hexagon {
-        /* Same color as your old stat.bg (gradient purple-blue) */
-background: linear-gradient(135deg, #5CD2F4 0%, #A05DF5 50%, #FF8BE6 100%);
-        clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
-        border-radius: 8px;
-        transition: transform 0.3s ease;
-      }
-      .hexagon:hover {
-        transform: scale(1.05);
-      }
-    `}
-  </style>
+  {`
+    .hexagon {
+      background: linear-gradient(135deg, #5CD2F4 0%, #A05DF5 50%, #FF8BE6 100%);
+      clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+    .hexagon:hover {
+      transform: scale(1.05);
+    }
+  `}
+</style>
 
-  <div className="flex flex-col md:flex-row gap-4 p-4 justify-center mt-10">
-    {statsData.map((stat, index) => (
-      <div
-        key={index}
-        className="
-          text-black
-          font-bold
-          w-[120px] h-[110px] sm:w-[130px] sm:h-[120px] md:w-[140px] md:h-[130px]
-          p-4 sm:p-5 md:p-6
-          mx-auto md:mx-0
-          shadow-md
-          flex flex-col justify-center items-center
-          text-center
-          hexagon
-        "
-      >
-        <p className="text-sm sm:text-base md:text-lg font-bold">
-          {stat.title}
-        </p>
-        <p className="text-xs sm:text-sm md:text-base font-semibold mt-1">
-          {stat.value}
-        </p>
-      </div>
-    ))}
-  </div>
+<div className="grid grid-cols-2 sm:grid-cols-2 md:flex md:flex-row gap-4 p-4 justify-center mt-10">
+  {statsData.map((stat, index) => (
+    <div
+      key={index}
+      className="
+        text-black
+        font-bold
+        w-[120px] h-[110px] sm:w-[130px] sm:h-[120px] md:w-[140px] md:h-[130px]
+        p-4 sm:p-5 md:p-6
+        mx-auto md:mx-0
+        shadow-md
+        flex flex-col justify-center items-center
+        text-center
+        hexagon
+      "
+    >
+      <p className="text-sm sm:text-base md:text-lg font-bold">{stat.title}</p>
+      <p className="text-xs sm:text-sm md:text-base font-semibold mt-1">{stat.value}</p>
+    </div>
+  ))}
+</div>
+
 </>
 
 
@@ -332,47 +329,48 @@ background: linear-gradient(135deg, #5CD2F4 0%, #A05DF5 50%, #FF8BE6 100%);
 
         <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center lg:gap-8 gap-10 mt-16 px-4">
   {/* Left Section */}
-  <div className="lg:w-1/2 w-full text-center lg:text-left">
-    <h3
-      className="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-snug mb-3"
-      style={{ color: "#d8b9ff" }}
-    >
-      Comprehensive Receivables Management Services
-    </h3>
+ <div className="lg:w-1/2 w-full text-center lg:text-left">
+  <h3
+    className="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-snug mb-3 text-left sm:text-center lg:text-left"
+    style={{ color: "#d8b9ff" }}
+  >
+    Comprehensive Receivables Management Services
+  </h3>
 
-    <h3
-      className="text-base sm:text-lg lg:text-xl font-semibold leading-snug text-white mb-6"
-    >
-      Complete Outsourcing of the Credit Cycle
-    </h3>
+  <p
+    className="text-base sm:text-lg lg:text-xl font-semibold leading-snug text-white mb-6 text-left sm:text-center lg:text-left"
+  >
+    Complete Outsourcing of the Credit Cycle
+  </p>
 
-    <ul className="flex flex-col lg:flex-row lg:flex-wrap justify-start text-gray-300 leading-relaxed text-sm sm:text-base lg:text-lg space-y-4 lg:space-y-0 lg:gap-8">
-      {[
-        "AQM to Enable a Level Playing Field for the Industry",
-        "Outsource the Entire Collections Function",
-        "Move From Outsourcing to Business Partnership",
-      ].map((item, index) => (
-        <li
-          key={index}
-          className="flex items-start lg:items-center w-full lg:w-auto text-left"
-        >
-          <span className="bg-blue-600 rounded-full p-1 mr-3 mt-1 flex items-center justify-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={3}
-              stroke="white"
-              className="w-3 h-3"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-            </svg>
-          </span>
-          <span className="flex-1">{item}</span>
-        </li>
-      ))}
-    </ul>
-  </div>
+  <ul className="flex flex-col lg:flex-row lg:flex-wrap justify-start text-gray-300 leading-relaxed text-sm sm:text-base lg:text-lg space-y-4 lg:space-y-0 lg:gap-8">
+    {[
+      "AQM to Enable a Level Playing Field for the Industry",
+      "Outsource the Entire Collections Function",
+      "Move From Outsourcing to Business Partnership",
+    ].map((item, index) => (
+      <li
+        key={index}
+        className="flex items-start lg:items-center w-full lg:w-auto text-left"
+      >
+        <span className="bg-blue-600 rounded-full p-1 mr-3 mt-1 flex items-center justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={3}
+            stroke="white"
+            className="w-3 h-3"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+        </span>
+        <span className="flex-1">{item}</span>
+      </li>
+    ))}
+  </ul>
+</div>
+
 
   {/* Right Section */}
   <div className="flex justify-center lg:justify-start mt-8 lg:mt-16 w-full lg:w-auto">
@@ -381,7 +379,7 @@ background: linear-gradient(135deg, #5CD2F4 0%, #A05DF5 50%, #FF8BE6 100%);
       muted
       loop
       playsInline
-      className="w-[260px] sm:w-[320px] md:w-[340px] lg:w-[360px] rounded-2xl shadow-2xl lg:mr-20"
+      className="w-[260px] sm:w-[320px] md:w-[340px] lg:w-[360px] rounded-2xl shadow-2xl lg:mr-20 -mt-10 sm:mt-0"
     >
       <source src={ethvideo} type="video/mp4" />
     </video>
