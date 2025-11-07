@@ -72,7 +72,7 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-[#1f1f1f] flex justify-center items-center px-4 py-10">
-      <div className="bg-[#2a2a2a] w-full max-w-6xl rounded-2xl shadow-xl p-6 md:p-10 flex flex-col md:flex-row gap-10 text-white relative">
+      <div className="bg-black w-full max-w-6xl rounded-2xl shadow-xl p-6 md:p-10 flex flex-col md:flex-row gap-10 text-white relative">
         {/* <button className="absolute top-4 right-4 text-white text-2xl hover:text-gray-400">
           ✕
         </button> */}

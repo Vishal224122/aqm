@@ -14,7 +14,11 @@ export default function Navbar() {
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <NavLink to="/" onClick={() => setIsMenuOpen(false)}>
-            <img src={logoAqm} alt="AQM Logo" className="h-[60px] w-[100px]" />
+<img
+  src={logoAqm}
+  alt="AQM Logo"
+  className="h-[70px] w-auto"
+/>
           </NavLink>
         </div>
 

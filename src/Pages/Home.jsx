@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import demoImage from "../Images/hero8.mp4";
+import demoImage from "../Images/hero10.mp4";
 import mobiledemoImage from "../Images/hero9.mp4"
 import indiaMap from "../Images/india_map.mp4";
 import tpeImg from "../Images/tpe.png";

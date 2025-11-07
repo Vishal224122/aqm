@@ -28,7 +28,7 @@ export default function Footer() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Left - Logo */}
         <div className="flex flex-col items-center md:items-start mr-8">
-          <img src={logoAqm} alt="AQM Logo" className="h-[40px] w-[90px]" />
+          <img src={logoAqm} alt="AQM Logo" className="h-[70px] w-auto ml-20" />
         </div>
 
         {/* Middle - Links */}
