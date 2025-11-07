@@ -79,7 +79,7 @@ export default function ContactPage() {
 
         {/* Left Section */}
         <div className="w-full md:w-1/2 flex flex-col space-y-4">
-          <img src={logo} alt="aqm Logo" className="h-[60px] w-[100px]" />
+          <img src={logo} alt="aqm Logo" className="h-[70px] w-[100px]" />
           <h2 className="text-2xl font-semibold leading-snug">
             Reach us at <br />
           </h2>

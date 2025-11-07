@@ -17,7 +17,7 @@ export default function Navbar() {
 <img
   src={logoAqm}
   alt="AQM Logo"
-  className="h-[70px] w-auto"
+  className="h-[80px] w-auto"
 />
           </NavLink>
         </div>

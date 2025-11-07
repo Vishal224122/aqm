@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import demoImage from "../Images/hero10.mp4";
-import mobiledemoImage from "../Images/hero9.mp4"
+import mobiledemoImage from "../Images/hero11.mp4"
 import indiaMap from "../Images/india_map.mp4";
 import tpeImg from "../Images/tpe.png";
 import paytmImg from "../Images/paytm3.png";
@@ -492,7 +492,7 @@ background: linear-gradient(135deg, #5CD2F4 0%, #A05DF5 50%, #FF8BE6 100%);
             ))}
           </div> */}
 
-        <div className="max-w-6xl mx-auto px-6 mb-16">
+        <div className="max-w-6xl mx-auto px-6 mb-32">
           <h2
             className="text-center text-2xl md:text-3xl font-bold mb-8 tracking-wide"
             style={{ color: "#d8b9ff" }}

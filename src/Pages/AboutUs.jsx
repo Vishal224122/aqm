@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import bgImage from "../Images/aboutus.png"; // background for Hero
+import bgImage from "../Images/aboutuss.png"; // background for Hero
 import Footer from "../Pages/Footer";
 
 export default function HeroSection() {
