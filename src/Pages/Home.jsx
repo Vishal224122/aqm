@@ -79,10 +79,10 @@ export default function Home() {
   };
 
   const statsData = [
-    { title: "Telecallers",  value: "3500+", bg: "bg-[#a0cbee]" },
-    { title: "FOS",  value: "2500+", bg: "bg-[#e0eef7]" },
-    { title: "Collections",  value: "21k Cr / Yr", bg: "bg-[#f7e4e6]" },
-    { title: "Borrowers",  value: "5 Mn / Yr.", bg: "bg-[#e1c3ff]" },
+    { title: "Telecallers", value: "3500+", bg: "bg-[#a0cbee]" },
+    { title: "FOS", value: "2500+", bg: "bg-[#e0eef7]" },
+    { title: "Collections", value: "21k Cr / Yr", bg: "bg-[#f7e4e6]" },
+    { title: "Borrowers", value: "5 Mn / Yr.", bg: "bg-[#e1c3ff]" },
   ];
 
 
@@ -139,23 +139,23 @@ export default function Home() {
     <section className="bg-black text-white lg:mt-[-40px] ">
       {/* Hero Section */}
       {/* Laptop / Tablet view */}
-<video
-  src={demoImage}
-  autoPlay
-  muted
-  playsInline
-  className="hidden sm:block w-full relative top-[-100px]"
-></video>
+      <video
+        src={demoImage}
+        autoPlay
+        muted
+        playsInline
+        className="hidden sm:block w-full relative top-[-100px]"
+      ></video>
 
-{/* Mobile view */}
-<video
-  src={mobiledemoImage}
-  autoPlay
-  muted
+      {/* Mobile view */}
+      <video
+        src={mobiledemoImage}
+        autoPlay
+        muted
 
-  playsInline
-  className="block sm:hidden w-full h-auto object-cover object-top mt-3"
-></video>
+        playsInline
+        className="block sm:hidden w-full h-auto object-cover object-top mt-3"
+      ></video>
 
 
 
@@ -165,16 +165,16 @@ export default function Home() {
         </div>
       </div>
 
-     
+
 
       {/* Digital Banking Section */}
       <div className="bg-black text-white py-20">
         <div className="w-full text-center mb-16">
           <h1
             className="text-2xl   text-sky-400 sm:text-3xl md:text-4xl font-semibold leading-snug mb-4 text-center px-4 sm:px-6 md:px-0"
-            
+
           >
-            India’s Only Company to Have a Nation-wide <br className="hidden sm:block" />
+            India’s Only Company to Have Nation-wide <br className="hidden sm:block" />
             Voice & Field Operations
           </h1>
 
@@ -197,21 +197,21 @@ export default function Home() {
             />
           </div> */}
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:gap-16 gap-12 -mt-20 md:mt-0">
-  <div className="flex-1 flex justify-center px-2 sm:px-4">
-    <video
-      src={india}
-      autoPlay
-      loop
-      muted
-      playsInline
-      className="
+            <div className="flex-1 flex justify-center px-2 sm:px-4">
+              <video
+                src={india}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="
         w-[100vw] sm:w-auto
         h-[480px] sm:h-[480px] md:h-[650px] lg:h-[600px]
         drop-shadow-2xl rounded-2xl object-contain 
       "
-    />
-  </div>
-</div>
+              />
+            </div>
+          </div>
 
 
           <div className="flex-1 text-center md:text-left space-y-6 -mt-20">
@@ -247,36 +247,38 @@ export default function Home() {
               </ul>
 
               {/* ✅ Stats Cards */}
-      <>
-  <style>
-  {`
-    .hexagon {
-      background: linear-gradient(135deg, #5CD2F4 0%, #A05DF5 50%, #FF8BE6 100%);
-      clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
-      border-radius: 8px;
-      transition: transform 0.3s ease;
+              <>
+        <style>
+{`
+  .hexagon {
+    background: linear-gradient(135deg, #5CD2F4 0%, #A05DF5 50%, #FF8BE6 100%);
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  .hexagon:hover {
+    transform: scale(1.05);
+  }
+
+  /* 👇 Apply tighter horizontal gap only for mobile */
+  @media (max-width: 767px) {
+    .mobile-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 8px;   /* reduce horizontal space */
+      row-gap: 10px;     /* keep small vertical gap */
+      justify-items: center;
     }
-    .hexagon:hover {
-      transform: scale(1.05);
-    }
-  `}
+  }
+`}
 </style>
 
-<div className="grid grid-cols-2 sm:grid-cols-2 md:flex md:flex-row gap-2 p-4 justify-center mt-10">
+<div className="grid grid-cols-2 sm:grid-cols-2 md:flex md:flex-row gap-4 md:gap-8 p-4 justify-center mt-10 mobile-grid">
   {statsData.map((stat, index) => (
     <div
       key={index}
-      className="
-        text-black
-        font-bold
-        w-[120px] h-[110px] sm:w-[130px] sm:h-[120px] md:w-[140px] md:h-[130px]
-        p-4 sm:p-5 md:p-6
-        mx-auto md:mx-0
-        shadow-md
-        flex flex-col justify-center items-center
-        text-center
-        hexagon
-      "
+      className="text-black font-bold w-[120px] h-[110px] sm:w-[130px] sm:h-[120px] md:w-[140px] md:h-[130px]
+      p-4 sm:p-5 md:p-6 shadow-md flex flex-col justify-center items-center text-center hexagon"
     >
       <p className="text-sm sm:text-base md:text-lg font-bold">{stat.title}</p>
       <p className="text-xs sm:text-sm md:text-base font-semibold mt-1">{stat.value}</p>
@@ -284,24 +286,27 @@ export default function Home() {
   ))}
 </div>
 
-</>
+
+
+
+  </>
 
 
 
 
-             <div className="flex justify-end">
-  <Link
+   <div className="flex justify-end">
+   <Link
     to="/services"
-    className="inline-flex items-center gap-2 text-sky-400 font-medium hover:underline text-sm mr-5"
-  >
-    Know More <ArrowRight size={16} />
-  </Link>
-</div>
+     className="inline-flex items-center gap-2 text-sky-400 font-medium hover:underline text-sm mr-5"
+   >
+     Know More <ArrowRight size={16} />
+    </Link>
+     </div>
 
-            </div>
+     </div>
 
-          </div>
-        </div>
+    </div>
+   </div>
 
         {/* Ticker Section */}
         <Marquee>
@@ -327,63 +332,63 @@ export default function Home() {
         {/* Mobile Video Section */}
 
         <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center lg:gap-8 gap-10 mt-16 px-4">
-  {/* Left Section */}
- <div className="lg:w-1/2 w-full text-center lg:text-left">
-  <h3
-    className="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-snug mb-3 text-left sm:text-center lg:text-left"
-    style={{ color: "#d8b9ff" }}
-  >
-    Comprehensive Receivables Management Services
-  </h3>
+          {/* Left Section */}
+          <div className="lg:w-1/2 w-full text-center lg:text-left">
+            <h3
+              className="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-snug mb-3 text-left sm:text-center lg:text-left"
+              style={{ color: "#d8b9ff" }}
+            >
+              Comprehensive Receivables Management Services
+            </h3>
 
-  <p
-    className="text-base sm:text-lg lg:text-xl font-semibold leading-snug text-white mb-6 text-left sm:text-center lg:text-left"
-  >
-    Complete Outsourcing of the Credit Cycle
-  </p>
+            <p
+              className="text-base sm:text-lg lg:text-xl font-semibold leading-snug text-white mb-6 text-left sm:text-center lg:text-left"
+            >
+              Complete Outsourcing of the Credit Cycle
+            </p>
 
-  <ul className="flex flex-col lg:flex-row lg:flex-wrap justify-start text-gray-300 leading-relaxed text-sm sm:text-base lg:text-lg space-y-4 lg:space-y-0 lg:gap-8">
-    {[
-      "AQM to Enable a Level Playing Field for the Industry",
-      "Outsource the Entire Collections Function",
-      "Move From Outsourcing to Business Partnership",
-    ].map((item, index) => (
-      <li
-        key={index}
-        className="flex items-start lg:items-center w-full lg:w-auto text-left"
-      >
-        <span className="bg-blue-600 rounded-full p-1 mr-3 mt-1 flex items-center justify-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={3}
-            stroke="white"
-            className="w-3 h-3"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-          </svg>
-        </span>
-        <span className="flex-1">{item}</span>
-      </li>
-    ))}
-  </ul>
-</div>
+            <ul className="flex flex-col lg:flex-row lg:flex-wrap justify-start text-gray-300 leading-relaxed text-sm sm:text-base lg:text-lg space-y-4 lg:space-y-0 lg:gap-8">
+              {[
+                "AQM to Enable a Level Playing Field for the Industry",
+                "Outsource the Entire Collections Function",
+                "Move From Outsourcing to Business Partnership",
+              ].map((item, index) => (
+                <li
+                  key={index}
+                  className="flex items-start lg:items-center w-full lg:w-auto text-left"
+                >
+                  <span className="bg-blue-600 rounded-full p-1 mr-3 mt-1 flex items-center justify-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={3}
+                      stroke="white"
+                      className="w-3 h-3"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
+                  <span className="flex-1">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
 
 
-  {/* Right Section */}
-  <div className="flex justify-center lg:justify-start mt-8 lg:mt-16 w-full lg:w-auto">
-    <video
-      autoPlay
-      muted
-      loop
-      playsInline
-      className="w-[260px] sm:w-[320px] md:w-[340px] lg:w-[360px] rounded-2xl shadow-2xl lg:mr-20 -mt-10 sm:mt-0"
-    >
-      <source src={ethvideo} type="video/mp4" />
-    </video>
-  </div>
-</div>
+          {/* Right Section */}
+          <div className="flex justify-center lg:justify-start mt-8 lg:mt-16 w-full lg:w-auto">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-[260px] sm:w-[320px] md:w-[340px] lg:w-[360px] rounded-2xl shadow-2xl lg:mr-20 -mt-10 sm:mt-0"
+            >
+              <source src={ethvideo} type="video/mp4" />
+            </video>
+          </div>
+        </div>
 
 
 
