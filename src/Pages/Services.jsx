@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { CheckCircleIcon, ChartBarIcon } from "@heroicons/react/24/solid";
 import { MdMemory } from "react-icons/md";
 import Services from "../Images/aqmservices2.mp4";
-import MobileServices from "../Images/aqmservices5.mp4"
+import MobileServices from "../Images/aqmservices6.mp4"
 import Footer from "./Footer";
 import mobileVideo from "../Images/mobile2.mp4";
 import dashboard from "../Images/dashboard1.png"

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import demoImage from "../Images/hero10.mp4";
-import mobiledemoImage from "../Images/hero11.mp4"
+import mobiledemoImage from "../Images/hero12.mp4"
 import indiaMap from "../Images/india_map.mp4";
 import tpeImg from "../Images/tpe.png";
 import paytmImg from "../Images/paytm3.png";
@@ -152,7 +152,7 @@ export default function Home() {
   src={mobiledemoImage}
   autoPlay
   muted
-  
+
   playsInline
   className="block sm:hidden w-full h-auto object-cover object-top mt-3"
 ></video>
