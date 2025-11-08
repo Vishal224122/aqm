@@ -50,7 +50,7 @@ export default function OurStory() {
     }`}
     autoPlay
     muted
-    
+    loop
     playsInline
   />
 
