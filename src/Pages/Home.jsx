@@ -152,7 +152,7 @@ export default function Home() {
   src={mobiledemoImage}
   autoPlay
   muted
-  loop
+  
   playsInline
   className="block sm:hidden w-full h-auto object-cover object-top mt-3"
 ></video>
