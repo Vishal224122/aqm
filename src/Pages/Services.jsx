@@ -31,7 +31,7 @@ export default function OurStory() {
 </h3>
 
 
-<p className="text-center text-gray-300 max-w-3xl mx-auto text-xl md:text-2xl px-4 mt-3">
+<p className="text-center text-white text-base sm:text-lg max-w-3xl mx-auto  md:text-2xl px-4 mt-3">
   AI Agentic Comms Orchestration & Smart Allocation Queues
 </p>
 
@@ -69,11 +69,11 @@ export default function OurStory() {
 </div>
 
 
-<div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 mt-16 px-6 md:px-16">
+<div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 mt-16 px-6 md:px-16 ">
   {/* Left Section - Text */}
-  <div className="w-full md:w-1/2 space-y-6 -ms-4">
+  <div className="w-full md:w-1/2 space-y-6 -ms-4  -mt-12 ">
     <h3
-      className="text-2xl sm:text-3xl md:text-4xl font-semibold leading-snug"
+      className="text-2xl sm:text-3xl md:text-4xl font-semibold leading-snug "
       style={{ color: "#d8b9ff" }}
     >
       AI Driven Field Engagement Application

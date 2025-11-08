@@ -262,7 +262,7 @@ export default function Home() {
   `}
 </style>
 
-<div className="grid grid-cols-2 sm:grid-cols-2 md:flex md:flex-row gap-4 p-4 justify-center mt-10">
+<div className="grid grid-cols-2 sm:grid-cols-2 md:flex md:flex-row gap-2 p-4 justify-center mt-10">
   {statsData.map((stat, index) => (
     <div
       key={index}
@@ -292,7 +292,7 @@ export default function Home() {
              <div className="flex justify-end">
   <Link
     to="/services"
-    className="inline-flex items-center gap-2 text-sky-400 font-medium hover:underline text-sm"
+    className="inline-flex items-center gap-2 text-sky-400 font-medium hover:underline text-sm mr-5"
   >
     Know More <ArrowRight size={16} />
   </Link>
